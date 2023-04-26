@@ -5,13 +5,13 @@ using namespace std;
 
 class Home_loan{
     public:
-    string Author_Name;
+    string Customer_Name;
     float EMI, INT, Rate, Rate_per_month, Loan_amount, Balance=0;
     float Total_INT=0, Princ=0, xyz;
     int year,months;
     void getdata(){
         cout<<"Enter a Author name : ";
-        cin>>Author_Name;
+        cin>>Customer_Name;
         cout<<"Enter a amount of Loan : ";
         cin>>Loan_amount;
         xyz=Loan_amount;
@@ -28,7 +28,7 @@ class Home_loan{
     }
     void putdata_1(){
         cout<<"\n";
-        cout<<"Author Name is : "<<Author_Name<<endl;
+        cout<<"Author Name is : "<<Customer_Name<<endl;
         cout<<"Total Amount of Loan is : "<<Loan_amount<<endl;
         cout<<"Rate for Loan is : "<<Rate<<endl;
         cout<<"Tenure in month is : "<<year<<endl;
