@@ -12,7 +12,7 @@ using namespace std;
 class Home_loan   //creating a class to calculate home loan interest
 {
     private:     //Declaring data members as private
-    string Author_Name;
+    string Customer_name;
     float EMI, INT, Rate, Rate_per_month, Loan_amount, Balance=0;
     float Total_INT=0, Principle_amt=0, xyz;
     int year,months;
@@ -21,7 +21,7 @@ class Home_loan   //creating a class to calculate home loan interest
     void getdata()      //creating getdata() fuction to input data
     {
         cout<<"Enter a Author name : ";
-        getline(cin,Author_Name);
+        getline(cin,Customer_name);
         cout<<"Enter a amount of Loan : ";
         cin>>Loan_amount;
         xyz=Loan_amount;        //Assigning Loan_amount in another member xyz for later use
@@ -42,7 +42,7 @@ class Home_loan   //creating a class to calculate home loan interest
     void putdata()      //Creating function to print the inputted data
     {
         cout<<"\n";     //Inserting a new line in output
-        cout<<"Author Name : "<<Author_Name<<endl;
+        cout<<"Customer Name : "<<Customer_name<<endl;
         cout<<"Total Amount of Loan : "<<Loan_amount<<endl;
         cout<<"Rate of interest : "<<Rate<<endl;
         cout<<"Tenure in month : "<<year<<endl;
